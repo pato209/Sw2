@@ -9,20 +9,20 @@ package sw2;
  * @author Rulo209
  */
 public class Usuario {
-    private Integer Id;
-    private String Nombre;
-    private String Telefono;
-    private String Direccion;
-    private String Email;
+    private Integer id;
+    private String nombre;
+    private String telefono;
+    private String direccion;
+    private String email;
     
   
 
     public Usuario(Integer Id, String Nombre, String Telefono, String Direccion, String Email) {
-        this.Id = Id;
-        this.Nombre = Nombre;
-        this.Telefono = Telefono;
-        this.Direccion = Direccion;
-        this.Email = Email;
+        this.id = Id;
+        this.nombre = Nombre;
+        this.telefono = Telefono;
+        this.direccion = Direccion;
+        this.email = Email;
     }
 
     Usuario() {
@@ -30,43 +30,43 @@ public class Usuario {
     }
 
     public Integer getId() {
-        return Id;
+        return id;
     }
 
     public void setId(Integer Id) {
-        this.Id = Id;
+        this.id = Id;
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+        this.nombre = Nombre;
     }
 
     public String getTelefono() {
-        return Telefono;
+        return telefono;
     }
 
     public void setTelefono(String Telefono) {
-        this.Telefono = Telefono;
+        this.telefono = Telefono;
     }
 
     public String getDireccion() {
-        return Direccion;
+        return direccion;
     }
 
     public void setDireccion(String Direccion) {
-        this.Direccion = Direccion;
+        this.direccion = Direccion;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public void setEmail(String Email) {
-        this.Email = Email;
+        this.email = Email;
     }
     
     

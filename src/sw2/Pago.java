@@ -11,49 +11,49 @@ import java.util.Date;
  * @author Rulo209
  */
 class Pago {
-    Float Valor;
-    Date Fecha;
-    Producto Producto;
-    Usuario Usuario;
+    Float valor;
+    Date fecha;
+    Producto producto;
+    Usuario usuario;
     
-    public Pago(String concepto, Float valor, Date fecha, Producto producto, Usuario usuario) {
+    public Pago(Float valor, Date fecha, Producto producto, Usuario usuario) {
         
-        this.Valor = valor;
-        this.Fecha = fecha;
-        this.Producto = producto;
-        this.Usuario = usuario;
+        this.valor = valor;
+        this.fecha = fecha;
+        this.producto = producto;
+        this.usuario = usuario;
     }
 
     public Float getValor() {
-        return Valor;
+        return valor;
     }
 
     public void setValor(Float Valor) {
-        this.Valor = Valor;
+        this.valor = Valor;
     }
 
     public Date getFecha() {
-        return Fecha;
+        return fecha;
     }
 
     public void setFecha(Date Fecha) {
-        this.Fecha = Fecha;
+        this.fecha = Fecha;
     }
 
     public sw2.Producto getProducto() {
-        return Producto;
+        return producto;
     }
 
     public void setProducto(sw2.Producto Producto) {
-        this.Producto = Producto;
+        this.producto = Producto;
     }
 
     public sw2.Usuario getUsuario() {
-        return Usuario;
+        return usuario;
     }
 
     public void setUsuario(sw2.Usuario Usuario) {
-        this.Usuario = Usuario;
+        this.usuario = Usuario;
     }
     
 }

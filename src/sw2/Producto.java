@@ -9,16 +9,16 @@ package sw2;
  * @author Rulo209
  */
 class Producto {
-    private String Nombre;
-    private String Tipo;
-    private String Formato;
-    private String Estado;
+    private String nombre;
+    private String tipo;
+    private String formato;
+    private String estado;
     
     public Producto(String nombre, String tipo, String formato, String estado ){
-        this.Nombre = nombre;
-        this.Tipo = tipo;
-        this.Formato = formato;
-        this.Estado = estado;
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.formato = formato;
+        this.estado = estado;
     }
 
     Producto() {
@@ -26,35 +26,35 @@ class Producto {
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+        this.nombre = Nombre;
     }
 
     public String getTipo() {
-        return Tipo;
+        return tipo;
     }
 
     public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
+        this.tipo = Tipo;
     }
 
     public String getFormato() {
-        return Formato;
+        return formato;
     }
 
     public void setFormato(String Formato) {
-        this.Formato = Formato;
+        this.formato = Formato;
     }
 
     public String getEstado() {
-        return Estado;
+        return estado;
     }
 
     public void setEstado(String Estado) {
-        this.Estado = Estado;
+        this.estado = Estado;
     }
    
 }

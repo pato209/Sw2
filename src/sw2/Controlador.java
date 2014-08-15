@@ -12,42 +12,41 @@ import sw2.Producto;
  *
  * @author Rulo209
  */
-public class Sw2 {
+public class Controlador {
 
     
-    public void Pagar(Pago pago) {
+    public void pagar(Pago pago) {
         
-        String formato = pago.Producto.getFormato();
-        String tipo = pago.Producto.getFormato();
+        String formato = pago.producto.getFormato();
+        String tipo = pago.producto.getTipo();
         if(formato.equalsIgnoreCase("Fisico")){
-            ordenEntrega(pago.Usuario);
-            comisionAgente(pago.Valor);
+            ordenEntrega(pago.usuario);
+            comisionAgente(pago.valor);
         }
         if(tipo.equalsIgnoreCase("Libro")){
-            ordenEntrega(pago.Usuario);
-            ordenEntregaDptoLibros(pago.Usuario);
-            comisionAgente(pago.Valor);
+            ordenEntrega(pago.usuario);
+            ordenEntregaDptoLibros(pago.usuario);
+            comisionAgente(pago.valor);
         }
         if(tipo.equalsIgnoreCase("Membresia")){
             Usuario u = new Usuario();
-            pago.Producto.setEstado("Activo");
+            pago.producto.setEstado("Activo");
             emailDueño(u);
         }
         if(tipo.equalsIgnoreCase("Actualizacion Membresia")){
-            pago.Usuario.setDireccion(null);
-            pago.Usuario.setEmail(null);
-            pago.Usuario.setId(null);
-            pago.Usuario.setNombre(null);
-            pago.Usuario.setTelefono(null);
-            emailDueño(pago.Usuario);
+            
+            pago.usuario.setDireccion(null);
+            pago.usuario.setEmail(null);
+            pago.usuario.setId(null);
+            pago.usuario.setNombre(null);
+            pago.usuario.setTelefono(null);
+            emailDueño(pago.usuario);
             
         }
-        if(tipo.equalsIgnoreCase("Video")){
-            String nombre = pago.Producto.getNombre();
-            if(nombre.equalsIgnoreCase("Aprendiendo a eskiar")){
-                Producto primerosAuxilios = new Producto();
+        String nombre = pago.producto.getNombre();
+        if(tipo.equalsIgnoreCase("Video") && nombre.equalsIgnoreCase("Aprendiendo a eskiar")){
+            Producto primerosAuxilios = new Producto();
                 pago.setProducto(primerosAuxilios);
-            }
         }
 
     
