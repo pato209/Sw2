@@ -22,10 +22,10 @@ public class Ventana extends javax.swing.JFrame {
         
         String productoBox = (String)this.producto.getSelectedItem();        
                  
-        if(productoBox == "Membresia"){
+        if(productoBox.equals("Membresia")){
             this.formato.setEnabled(false);
         }
-        if(productoBox == "Video"){
+        if(productoBox.equals("Video")){
             this.panelUsuario.setEnabled(false);
         }
     }
